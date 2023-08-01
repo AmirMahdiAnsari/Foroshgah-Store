@@ -1,0 +1,304 @@
+@media screen and (max-width:992px) {
+
+    header .navbar .menu > ul{
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: linear-gradient(0deg, rgba(61,43,71,1) 0%, rgba(253,45,45,1) 100%);
+        width: 300px;
+        height: 100vh;
+        z-index: 1000;
+        display: none;
+        overflow-y: auto;
+    }
+    header .navbar .menu > ul.hide-navbar{
+        display: none;
+    }
+    header .navbar .menu > ul.show-navbar{
+        display: block;
+    }
+    .hamburger{
+        width: 40px;
+        height: 40px;
+        background: #c00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10%;
+    }
+    .hamburger div{
+        width: 90%;
+        height: 3px;
+        background: #fff;
+        position: relative;
+    }
+    .hamburger div::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        transform: translateY(-10px);
+    }
+    .hamburger div::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        transform: translateY(10px);
+    }
+    header .navbar .menu > ul > li{
+        margin: 30px 0;
+    }
+    header .navbar .menu > ul > li > a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    header .navbar .menu > ul > li > a:hover{
+        color: #000;
+    }
+    header .navbar .menu > ul > .close-icon{
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid #000;
+        cursor: pointer;
+        display: block;
+    }
+    header .navbar .menu > ul > .close-icon:hover{
+        background-color: #fff;
+    }
+    header .navbar .menu > ul > .close-icon svg{
+        font-size: 25px;
+        cursor: pointer;
+    }
+    header .navbar .menu > ul > li > a > svg{
+        width: auto;
+        font-size: 25px;
+        margin-top: 0px;
+        position: absolute;
+        left: 60px;
+    }
+    header .navbar .menu ul li ul.mega-menu{
+        display: none;
+        position: relative;
+        transform: translateY(0);
+        top: 10px;
+    }
+    header .navbar .menu > ul > li:hover ul.mega-menu{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(0);
+    }
+    header .navbar .menu ul li ul.mega-menu.fade{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+    header .navbar .menu ul li ul.mega-menu li{
+        width: 100%;
+    }
+
+    header .navbar .social ul{
+        width: 47%;
+    }
+    #main{
+        flex-wrap: wrap;
+    }
+    #main #content{
+        width: 100%;
+    }
+    #main #sidebar{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .footer .footer-social ul{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header .navbar .social  ul{
+        width: 80%;
+    }
+    header .navbar .social button{
+        display: none;
+    }
+    .ads .logo img{
+        width: 90px;
+    }
+    .ads .banner{
+        width: 70%;
+    }
+    .ads .logo{
+        width: 30%;
+    }
+    .slider-item .item .caption{
+        width: 80vw;
+    }
+    .slider-item .item .caption h1{
+        font-size: 30px;
+    }
+    .slider-item .item .caption p{
+        font-size: 17px;
+    }
+    .suggested .suggested-title{
+        width: 100%;
+    }
+    .suggested .suggested-product{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .favourite .favourite-outline{
+        flex-wrap: wrap;
+    }
+    .favourite .favourite-content{
+        width: 100%;
+    }
+    .favourite .favourite-title{
+        width: 100%;
+        border: none;
+        border-top: 5px dashed #c00;
+        height: auto;
+        padding: 40px 0;
+        margin-top: 40px;
+    }
+    .footer .footer-about{
+        width: 100%;
+    }
+    .footer .footer-social{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .footer .footer-news-letter{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .footer .footer-customer-services{
+        width: 50%;
+    }
+    .footer .footer-quick-access{
+        width: 50%;
+    }
+    .footer .footer-license{
+        width: 50%;
+        margin-top: 40px;
+    }
+    .footer .footer-logo{
+        width: 50%;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    #main #content .content-container .dress{
+        flex-wrap: wrap;
+    }
+    #main #content .content-container .dress .dress-item{
+        width: 49%;
+        margin-top: 10px;
+    }
+    .suggested .suggested-product .suggested-product-item a{
+        font-size: 12px;
+    }
+    .best-selling-men .selling-men-product{
+        flex-wrap: wrap;
+    }
+    .best-selling-men .selling-men-product .selling-item{
+        width: 49%;
+        margin-top: 10px;
+    }
+    .selling-women-product{
+        flex-wrap: wrap;
+    }
+    .selling-women-product .selling-item{
+        width: 49%;
+        margin-top: 10px;
+    }
+    .best-selling-child .child-item{
+        width: 49%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    header .navbar .menu{
+        width: 40%;
+    }
+    header .navbar .social{
+        width: 90%;
+    }
+    header .navbar .social ul{
+        width: 100%;
+    }
+    .slider-item .item .caption{
+        width: 60vw;
+        top: -150px;
+    }
+    .slider-item .item .caption h1{
+        font-size: 20px;
+    }
+    .slider-item .item .caption p{
+        font-size: 14px;
+    }
+    .header-title h2{
+        width: 150px;
+        font-size: 16px;
+    }
+    #sidebar .sidebar-container .last-product .last-product-item a{
+        font-size: 11px;
+    }
+    #sidebar .sidebar-container .recent-best-seller .recent-item a{
+        font-size: 11px;
+    }
+    #sidebar .sidebar-container .laptop .laptop-item a{
+        font-size: 11px;
+    }
+    #cosmetic{
+        height: 150px;
+    }
+    #cosmetic img{
+        height: 150px;
+    }
+    #cosmetic h2{
+        font-size: 20px;
+        left: 5%;
+    }
+    .best-selling-men .selling-men-product .selling-item{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .selling-women-product .selling-item{
+        width: 100%;
+    }
+    .best-selling-child .child-item{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .suggested .suggested-title{
+        font-size: 30px;
+    }
+    .suggested .suggested-product{
+        flex-wrap: wrap;
+    }
+    .suggested .suggested-product .suggested-product-item{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .footer .footer-customer-services{
+        width: 100%;
+    }
+    .footer .footer-quick-access{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .footer .footer-license{
+        width: 100%;
+    }
+    .footer .footer-logo{
+        width: 100%;
+    }
+}
