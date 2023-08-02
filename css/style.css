@@ -1,15 +1,15 @@
 @font-face {
     font-family: 'Vazir';
-    src: url(../fonts/vazir.eot) format('eot'),
-    url(../fonts/vazir.ttf) format('truetype'),
-    url(../fonts/vazir.woff) format('woff');
+    src: url('fonts/vazir.eot') format('eot'),
+    url('fonts/vazir.ttf') format('truetype'),
+    url('fonts/vazir.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Yekan';
-    src: url(../fonts/Yekan.eot) format('eot'),
-    url(../fonts/Yekan.ttf) format('truetype'),
-    url(../fonts/Yekan.woff) format('woff');
+    src: url('fonts/Yekan.eot') format('eot'),
+    url('fonts/Yekan.ttf') format('truetype'),
+    url('fonts/Yekan.woff') format('woff');
 }
 
 *{
